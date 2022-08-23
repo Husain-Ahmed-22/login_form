@@ -1,0 +1,111 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.bg{
+  width: 100%;
+  height: 100vh;
+  background: #1E2B3B;
+}
+
+form{
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.first_name_box,
+.last_name_box{
+  width: 100%;
+  min-height: 50px;
+  position: relative;
+}
+
+.first_name_box input,
+.last_name_box input{
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: 10px;
+  background: none;
+  color: #08DAC6;
+  border: 1px solid #768290;
+  box-sizing: border-box;
+  padding-left: 10px;
+  transition: .3s;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.first_name_box input:valid,
+.last_name_box input:valid,
+.first_name_box input:focus,
+.last_name_box input:focus{
+  border: 1px solid #08DAC6;
+}
+
+.first_name_box label, .last_name_box label{
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  background: #1E2B3B;
+  color: #768290;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: .2s;
+}
+
+.first_name_box input:valid ~ label,
+.first_name_box input:focus ~ label{
+  top: -9px;
+  color: #08DAC6;
+  padding: 0px 10px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  border-left: 1px solid #08DAC6;
+  border-right: 1px solid #08DAC6;
+}
+
+
+.last_name_box input:valid ~ label,
+.last_name_box input:focus ~ label{
+  top: -9px;
+  color: #08DAC6;
+  border-radius: 3px;
+  padding: 0px 10px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  background: #08DAC6;
+  color: #1E2B3B;
+}
+
+.submit{
+  width: 150px;
+  height: 50px;
+  border: 1px solid #08DAC6;
+  background: none;
+  outline: none;
+  border-radius: 10px;
+  color: #08DAC6;
+  font-size: 18px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.submit:hover{
+  background: #08DAC6;
+  border: none;
+  color: #1E2B3B;
+  letter-spacing: 2px;
+}
